@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "353392225029",
+    "project_id": "citysaathi-c82af",
+    "storage_bucket": "citysaathi-c82af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353392225029:android:0c751fce3dbd51c7d5e56c",
+        "android_client_info": {
+          "package_name": "com.vktech.citysaathi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtbj51TgwfxCXB7kDBgZ6qxUd9GvDjMOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

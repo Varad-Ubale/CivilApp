@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CitySaathi</string>
+
+    <string name="activity_report_issue_label">Report New Issue</string>
+
+    <string name="fab_content_description">Report New Issue</string>
+    <string name="empty_list_message">No issues reported yet.\nBe the first to report one!</string>
+
+    <string-array name="issue_categories">
+        <item>Select Category</item>
+        <item>Pothole</item>
+        <item>Water Leakage</item>
+        <item>Broken Streetlight</item>
+        <item>Garbage Overflow</item>
+        <item>Public Vandalism</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light"
+    tools:context=".AdminDashboardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Admin Dashboard"
+        app:titleTextColor="@android:color/white" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_list"
+                        app:tint="@color/textPrimary"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/totalIssuesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="15"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Issues"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_submitted"
+                        app:tint="@color/status_submitted"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/submitted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="5"
+                        android:textSize="24sp"
+                        android:textColor="@color/status_submitted"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submitted"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_pending"
+                        app:tint="@color/status_pending"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/pendingIssuesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="3"
+                        android:textSize="24sp"
+                        android:textColor="@color/status_pending"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_in_progress"
+                        app:tint="@color/status_in_progress"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/inProgressIssuesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="2"
+                        android:textSize="24sp"
+                        android:textColor="@color/status_in_progress"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In Queue/Fixing"
+                        android:gravity="center"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_resolved"
+                        app:tint="@color/status_resolved"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/resolvedIssuesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="5"
+                        android:textSize="24sp"
+                        android:textColor="@color/status_resolved"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resolved"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Reported Issues"
+        android:textSize="18sp"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/adminIssuesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="40dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            tools:listitem="@layout/item_issue_admin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="© Made by Varad Ubale"
+            android:textColor="@color/textSecondary"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</LinearLayout>
